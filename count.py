@@ -64,7 +64,6 @@ for i in range(len(contours)):
 		if found % 100 == 0:
 			print(f'found {found} spots with desired area')
 		# pick a random color so neighboring spots can be visually distinguished
-		#spot_contour_color = random.sample([(205,250,45),(255,150,45),(245,75,211),(100,150,255),(160,60,255)], 1)[0]
 		spot_contour_color = random.sample([(0,220,220),(120,255,255),(220,220,0),(255,255,120),(220,0,220),(255,120,255),(255,120,120),(120,255,120),(120,120,255),(255,220,220),(220,255,220),(220,220,255)], 1)[0]
 		cv2.drawContours(img_color, contours, i, spot_contour_color, 2, cv2.LINE_8)
 
