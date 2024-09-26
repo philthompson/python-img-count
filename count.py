@@ -15,8 +15,12 @@
 # tips:
 # - it may be helpful to use photoshop or similar to paint over high-contrast areas
 #     with a solid color where those areas should not be counted
-# - for noisy images using strong de-noising or gentle blurring, that still allows
-#     the spots to be seen and counted, will significantly speed up the processing time
+# - if there are too many high-contrast areas being erroneously counted, using
+#     Photoshop or similar it may be best to use a color range selection for
+#     the spots you wish to count, and then invert and paint over everything else
+#     with a solid color
+# - for noisy images, using strong de-noising or gentle blurring will significantly
+#     speed up the processing time
 #
 
 import cv2
